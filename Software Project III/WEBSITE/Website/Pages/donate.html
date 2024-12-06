@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savior: Blood Donation Platform</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background: #f8f8f8;
+            padding: 20px;
+        }
+        header img {
+            width: 100px; /* Adjust logo size */
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+            background-color: #e74c3c;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: all 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            background-color: white;
+            color: #e74c3c;
+            border-radius: 5px;
+        }
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+        .main-content h1 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .main-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .donate-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .donate-btn:hover {
+            transform: scale(1.1);
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 60px;
+            margin: 40px;
+            padding: 20px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            font-size: 14px;
+            background-color: #e74c3c;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #ddd;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h1
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo"> <!-- Replace with actual logo image URL -->
+        <h1>Savior: রক্তদানই জীবনের দান</h1>
+        <p>মানবতার সেবায় এগিয়ে আসুন।</p>
+    </header>
+    <nav class="navbar">
+        <a href="../index.html">Request</a>
+        <a href="available_donor.html">Available Donor</a>
+        <a href="donate.html">Donate</a>
+        <a href="about_us.html">About Us</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+    <section class="main-content" id="about-us">
+        <h1>রক্ত দিন, জীবন বাঁচান</h1>
+        <p>সেসেভিয়র একটি মানবিক রক্তদান সংস্থা, যা মানুষের জীবন বাঁচানোর জন্য নিরলসভাবে কাজ করে যাচ্ছে। প্রতিদিন অসংখ্য মানুষ রক্তের অভাবে মৃত্যুর মুখোমুখি হয়। সেভিয়র তাদের পাশে দাঁড়ানোর অঙ্গীকার নিয়ে কাজ শুরু করেছে। আমাদের লক্ষ্য শুধুমাত্র রক্তের প্রাপ্যতা নিশ্চিত করা নয়, বরং রক্তদানের গুরুত্ব সম্পর্কে মানুষকে সচেতন করাও। আমরা বিশ্বাস করি, রক্তদান একটি পবিত্র কাজ, যা একজন মানুষের জীবন রক্ষায় সহায়ক হতে পারে।</p>
+        <p>সেভিয়র এমন একটি প্ল্যাটফর্ম যেখানে রক্তদাতা এবং রক্তগ্রহীতার মধ্যে সরাসরি সংযোগ স্থাপন করা হয়। আমাদের ডাটাবেসে রয়েছে সারা দেশের রক্তদাতাদের তালিকা, যা যেকোনো সময় রক্তের প্রয়োজন মেটাতে সাহায্য করে। এছাড়াও, আমরা নিয়মিত রক্তদান শিবির আয়োজন করি, যেখানে মানুষ স্বেচ্ছায় রক্তদান করে এবং মানবতার কল্যাণে অবদান রাখে।</p>
+        <p>আপনার দান শুধুমাত্র একটি রক্তের ব্যাগ নয়, এটি একটি পরিবারের আশা, একজন মায়ের সন্তানকে ফিরে পাওয়ার আনন্দ, অথবা একজন বাবার পরিবারের প্রতি দায়িত্ব পালনের শক্তি। আমরা আপনার অংশগ্রহণের মাধ্যমে এই কার্যক্রমকে আরও বিস্তৃত করতে চাই।</p>
+        <p>সেভিয়র আপনাকে আহ্বান জানাচ্ছে—আসুন, আমাদের এই মহৎ উদ্যোগে যোগ দিন। আমাদের ওয়েবসাইটের মাধ্যমে আপনি রক্তদাতা হিসেবে নিবন্ধন করতে পারেন, রক্তের প্রয়োজনীয়তা সম্পর্কে জানতে পারেন, এবং যেকোনো জরুরি অবস্থায় আমাদের সঙ্গে যোগাযোগ করতে পারেন।</p>
+        <a href="#donate" class="donate-btn">Donate</a>
+    </section>
+    <section class="image-grid" id="gallery">
+        <img src="../images/visa.png" alt="Image 1">
+        <img src="../images/master.png" alt="Image 2">
+        <img src="../images/bkash.jpg" alt="Image 3">
+        <img src="../images/dbbl.jpg" alt="Image 4">
+    </section>
+    <h1> রক্ত দিন, জীবন বাঁচান। আজই সেভিয়র-এর অংশ হোন এবং মানবতার সেবায় আপনার মূল্যবান অবদান রাখুন।</h1>
+    <footer>
+        <p>© 2024 Savior a Blood Donation Platform. All rights reserved.<br>
+            Designed by Sajib Hossen | 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Logo section */
+    .logo {
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+      border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    /* Top menu section */
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(0, 26, 255);
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu button {
+      background-color: #0076fd;
+      border: none;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .menu button:hover {
+      background-color: #ccc;
+      color: black;
+      transform: scale(1.1);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      width: 700px;
+      background-color: rgb(107, 54, 204);
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card button {
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      font-size: 14px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card button:hover {
+      background-color: #007acc;
+      transform: scale(1.1);
+    }
+
+    /* Footer section */
+    footer {
+      background-color: rgb(67, 34, 189);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 20px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer a {
+      color: yellow;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="images/logo.png" alt="Blood Donation Logo">
+  </div>
+
+  <!-- Top menu -->
+  <div class="menu">
+    <button onclick="window.location.href='index.html';">Request</button>
+    <button onclick="window.location.href='Pages/available_donor.html';">Available Donor</button>
+    <button onclick="window.location.href='Pages/donate.html';">Donate</button>
+    <button onclick="window.location.href='pages/about_us.html';">About Us</button>
+    <button onclick="window.location.href='pages/Profile.html';">Profile</button>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <!-- Cards for all 12 individuals -->
+    <div class="card">
+      <img src="images/sajib.jpg" alt="Sajib Hossen">
+      <h3>Sajib Hossen</h3>
+      <p>Blood Type Needed: A+</p>
+      <p>Hospital: Dhaka Medical College</p>
+      <p>Contact: +8801712345678</p>
+      <p>Description: Urgently seeking A+ blood donors for my brother undergoing surgery at Dhaka Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/emon.jpg" alt="Mahadi Hasan Emon">
+      <h3>Mahadi Hasan Emon</h3>
+      <p>Blood Type Needed: O-</p>
+      <p>Hospital: Chittagong Medical College</p>
+      <p>Contact: +8801812345678</p>
+      <p>Description: O- blood urgently needed for a critical patient at Chittagong Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/riddi.jpg" alt="Rownok Riddi">
+      <h3>Rownok Riddi</h3>
+      <p>Blood Type Needed: AB+</p>
+      <p>Hospital: Rajshahi Medical College</p>
+      <p>Contact: +8801912345678</p>
+      <p>Description: In need of AB+ blood for my mother’s treatment at Rajshahi Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/raj.jpg" alt="Raj Chandra">
+      <h3>Raj Chandra</h3>
+      <p>Blood Type Needed: O+</p>
+      <p>Hospital: Sylhet Medical College</p>
+      <p>Contact: +8801812340000</p>
+      <p>Description: Critical need for O+ blood for emergency surgery at Sylhet Medical College.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/mehedi.jpg" alt="Mehedi Hasan">
+      <h3>Mehedi Hasan</h3>
+      <p>Blood Type Needed: A-</p>
+      <p>Hospital: Khulna Medical College</p>
+      <p>Contact: +8801819876543</p>
+      <p>Description: Looking for A- blood donors for a patient at Khulna Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/durjoy.jpg" alt="Durjoy Alom">
+      <h3>Durjoy Alom</h3>
+      <p>Blood Type Needed: O+</p>
+      <p>Hospital: Sylhet Medical College</p>
+      <p>Contact: +8801919876543</p>
+      <p>Description: O+ blood needed for an emergency at Sylhet Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/hafiz.jpg" alt="Hafizur Rahman">
+      <h3>Hafizur Rahman</h3>
+      <p>Blood Type Needed: AB-</p>
+      <p>Hospital: Rangpur Medical College</p>
+      <p>Contact: +8801711234567</p>
+      <p>Description: Urgent need for AB- blood for my father at Rangpur Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/emtiaz.jpg" alt="Emtiaz Emon">
+      <h3>Emtiaz Emon</h3>
+      <p>Blood Type Needed: B+</p>
+      <p>Hospital: Cumilla Medical College</p>
+      <p>Contact: +8801811234567</p>
+      <p>Description: B+ blood required for a critical patient at Cumilla Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/tawfik.jpg" alt="Mohamodullah Tawfik">
+      <h3>Mohamodullah Tawfik</h3>
+      <p>Blood Type Needed: A+</p>
+      <p>Hospital: Faridpur Medical College</p>
+      <p>Contact: +8801911234567</p>
+      <p>Description: A+ blood urgently needed at Faridpur Medical College Hospital for a surgery.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="images/mahatab.jpg" alt="Mahtab Khan">
+      <h3>Mahtab Khan</h3>
+      <p>Blood Type Needed: O-</p>
+      <p>Hospital: Jessore Medical College</p>
+      <p>Contact: +8801715678901</p>
+      <p>Description: Critical requirement for O- blood at Jessore Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Savior a Blood Donation Platform. All rights reserved.</p>
+    <p>Designed by [Sajib Hossen].</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+  </footer>
+</body>
+</html>

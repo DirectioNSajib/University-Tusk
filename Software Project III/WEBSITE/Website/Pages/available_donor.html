@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Logo section */
+    .logo {
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+      border-bottom: 2px solid rgb(0, 81, 255);
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    /* Top menu section */
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(111, 0, 255);
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu button {
+      background-color: #003cff;
+      border: none;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .menu button:hover {
+      background-color: #ccc;
+      color: black;
+      transform: scale(1.1);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      width: 700px;
+      background-color: rgb(76, 0, 255);
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card button {
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      font-size: 14px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card button:hover {
+      background-color: #007acc;
+      transform: scale(1.1);
+    }
+
+    /* Footer section */
+    footer {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 20px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer a {
+      color: yellow;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="../images/logo.png" alt="Blood Donation Logo">
+  </div>
+
+  <!-- Top menu -->
+  <div class="menu">
+    <button onclick="window.location.href='../index.html';">Request</button>
+    <button onclick="index.html">Available Donor</button>
+    <button onclick="window.location.href='donate.html';">Donate</button>
+    <button onclick="window.location.href='about_us.html';">About Us</button>
+    <button onclick="window.location.href='profile.html';">Profile</button>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <!-- Cards for all 12 individuals -->
+    <div class="card">
+      <img src="../images/raduan.jpg" alt="Sajib Hossen">
+      <h3>Redwan Ahmed</h3>
+      <p>Blood Type: A+</p>
+      <p>Location: Dhaka</p>
+      <p>Last Donation Time: 5 months ago</p>
+      <p>Mobile Number: +8801712345678</p>
+      <p>Description: "I am willing to donate A+ blood to anyone in need. Please contact me at +8801712345678. Last donated 5 months ago, and I’m ready to help again."</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/somoy.jpg" alt="Mahadi Hasan Emon">
+      <h3>Wahid Somoy</h3>
+      <p>Blood Type: O-</p>
+      <p>Location: Chattogram</p>
+      <p>Last Donation Time: 4 months ago</p>
+      <p>Mobile Number: +8801812345678</p>
+      <p>Description: "Available to donate O- blood. I last donated 4 months ago. Feel free to reach me at +8801812345678 for emergencies."</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/sajjad.jpg" alt="Rownok Riddi">
+      <h3>Ittekar Emon</h3>
+      <p>Blood Type Needed: AB+</p>
+      <p>Hospital: Rajshahi Medical College</p>
+      <p>Contact: +8801912345678</p>
+      <p>Description: In need of AB+ blood for my mother’s treatment at Rajshahi Medical College Hospital.</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/Nibir.jpg" alt="Raj Chandra">
+      <h3>Nur Mohammad Nibir</h3>
+      <p>Blood Type: AB+</p>
+      <p>Location: Rajshahi</p>
+      <p>Last Donation Time: 5 months ago</p>
+      <p>Mobile Number: +8801912345678</p>
+      <p>Description: "I am an AB+ blood donor, willing to help. My last donation was 5 months ago. Call me at +8801912345678 if needed."</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/surzo.jpg" alt="Mehedi Hasan">
+      <h3>Provakor Dhar Surzo</h3>
+      <p>Blood Type: B-</p>
+      <p>Location: Dhaka</p>
+      <p>Last Donation Time: 4 months ago</p>
+      <p>Mobile Number: +8801719876543</p>
+      <p>Description: "Ready to donate B- blood after 4 months since my last donation. Contact me at +8801719876543 for assistance."</p>      
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/alif.jpg" alt="Durjoy Alom">
+      <h3>Tanvir Mahmud Alif</h3>
+      <p>Blood Type: A-</p>
+      <p>Location: Sylhet</p>
+      <p>Last Donation Time: 5 months ago</p>
+      <p>Mobile Number: +8801819876543</p>
+      <p>Description: "Willing to donate A- blood. My last donation was 5 months ago. Reach me at +8801819876543 if required."</p>      
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/charu.jpg" alt="Hafizur Rahman">
+      <h3>Charu Wazed Noor</h3>
+      <p>Blood Type: O+</p>
+      <p>Location: Khulna</p>
+      <p>Last Donation Time: 4 months ago</p>
+      <p>Mobile Number: +8801919876543</p>
+      <p>Description: "I can donate O+ blood to those in need. It’s been 4 months since my last donation. Call me at +8801919876543 for help."</p>      
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/mahathir.jpg" alt="Emtiaz Emon">
+      <h3>Kazi Mahathir Mohammad</h3>
+      <p>Blood Type: AB+</p>
+      <p>Location: Bogura</p>
+      <p>Last Donation Time: 5 months ago</p>
+      <p>Mobile Number: +8801817654321</p>
+      <p>Description: "I am available to donate AB+ blood. Last donated 5 months ago. Reach me at +8801817654321 for urgent help."</p>
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/mazharul.jpg" alt="Mohamodullah Tawfik">
+      <h3>Mazharul Islam</h3>
+      <p>Blood Type: A+</p>
+      <p>Location: Barisal</p>
+      <p>Last Donation Time: 5 months ago</p>
+      <p>Mobile Number: +8801911234567</p>
+      <p>Description: "I’m ready to donate A+ blood. It’s been 5 months since my last donation. Contact me at +8801911234567."</p>      
+      <button>Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="../images/shanta.jpg" alt="Mahtab Khan">
+      <h3>Sadia Sumona Shanta</h3>
+      <p>Blood Type: O-</p>
+      <p>Location: Mymensingh</p>
+      <p>Last Donation Time: 4 months ago</p>
+      <p>Mobile Number: +8801717654321</p>
+      <p>Description: "Willing to donate O- blood. My last donation was 4 months ago. Call me at +8801717654321."</p>
+      <button>Contact</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Savior a Blood Donation Platform. All rights reserved.</p>
+    <p>Designed by [Sajib Hossen].</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+  </footer>
+</body>
+</html>

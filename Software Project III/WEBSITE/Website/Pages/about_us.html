@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savior - Blood Donation Platform</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0077b6;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            height: 50px;
+            width: auto;
+            margin-right: 15px;
+        }
+        .logo-container .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #023e8a;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-btn:hover {
+            background-color: #00b4d8;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 180, 216, 0.5);
+        }
+        .description {
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .description h1 {
+            font-size: 36px;
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+        .description p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            background-color: #023e8a;
+            color: #fff;
+            padding: 15px 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.png" alt="Savior Logo">
+            <div class="logo-text">Saviour</div>
+        </div>
+        <nav>
+            <a href="../index.html" class="nav-btn">Request</a>
+            <a href="available_donor.html" class="nav-btn">Available Donor</a>
+            <a href="donate.html" class="nav-btn">Donate</a>
+            <a href="about_us.html" class="nav-btn">About Us</a>
+            <a href="profile.html" class="nav-btn">Profile</a>
+        </nav>
+    </header>
+    
+    <section class="description">
+        <h1>আমাদের সম্পর্কে - সেভিয়র</h1>
+        <p>
+            সেভিয়র একটি মানবিক রক্তদান সংস্থা, যার মূল উদ্দেশ্য হলো জীবন বাঁচানোর জন্য রক্ত সরবরাহের মাধ্যমে সমাজে একটি ইতিবাচক পরিবর্তন আনা। আমরা বিশ্বাস করি, রক্তদান একটি মহান কাজ, যা শুধু শারীরিক জীবন রক্ষায় সাহায্য করে না, বরং এটি মানবিক মূল্যবোধেরও প্রতীক। সেভিয়র সংস্থা গড়ে তোলা হয়েছে এমন একটি প্ল্যাটফর্ম হিসেবে, যা রক্তের প্রয়োজনীয়তা মেটানোর জন্য জরুরি পরিস্থিতিতে সহায়ক ভূমিকা পালন করে।
+
+            আমাদের লক্ষ্য হল:
+        </p>
+        <h1>রক্তের সহজ প্রাপ্যতা নিশ্চিত করা</h1>
+        <p>আমরা রক্তদাতাদের একটি বড় নেটওয়ার্ক তৈরি করে, যাতে রক্তের অভাবে কেউ মারা না যায়।</p>
+        <h1>রক্তদানের গুরুত্ব সম্পর্কে সচেতনতা তৈরি করা</h1>
+        <p>আমাদের কার্যক্রমের মাধ্যমে রক্তদানের গুরুত্ব তুলে ধরা এবং মানুষের মধ্যে এই বিষয়টি নিয়ে সচেতনতা বৃদ্ধি করা।</p>
+        <h1>প্রয়োজনের সময় দ্রুত রক্ত সরবরাহ করা</h1>
+        <p>আমরা নির্দিষ্ট এলাকায় রক্তদান শিবির এবং রক্তদাতা তালিকা সরবরাহ করি, যাতে সময়মতো রক্ত পাওয়া যায়।</p>
+        <h1>আমরা যেসব কার্যক্রম পরিচালনা করি:</h1>
+        <h1>রক্তদান শিবির</h1>
+        <p>আমরা বিভিন্ন স্থানীয় প্রতিষ্ঠানে নিয়মিত রক্তদান শিবিরের আয়োজন করি।</p>
+        <h>রক্তদাতাদের তালিকা</h>
+        <p>আমাদের ডাটাবেসে রক্তদাতাদের তালিকা রাখা হয়, যাতে যেকোনো সময় রক্তের প্রয়োজন হলে আমরা দ্রুত যোগাযোগ করতে পারি।</p>
+        <h1>রক্তদান সম্পর্কে শিক্ষামূলক কার্যক্রম</h1>
+        <p>আমরা রক্তদানের গুরুত্ব নিয়ে সচেতনতা বৃদ্ধির জন্য শিক্ষা কার্যক্রমও পরিচালনা করি।</p>
+        <h1>আমাদের সাথে যোগ দিন</h1>
+        <p>আপনি যদি রক্তদান করতে চান, আমাদের ওয়েবসাইটে সহজেই নিবন্ধন করতে পারেন এবং আমাদের কার্যক্রমে অংশ নিতে পারেন।
+             সেভিয়র-এর মাধ্যমে আপনি একটি জীবন বাঁচাতে সহায়ক হতে পারেন এবং মানবতার কল্যাণে অবদান রাখতে পারেন।</p>
+        <h1>সেভিয়র-এ আমরা বিশ্বাস করি, একে অপরের সাহায্যে আমাদের সমাজ আরও সুস্থ, শক্তিশালী এবং সহানুভূতিশীল হয়ে উঠতে পারে। আসুন, একসাথে একটি পরিবর্তন আনতে আমরা মানবতার সেবায় কাজ করি।</h1>
+    </section>
+    
+    <footer>
+        &copy; 2024 Savior. All rights reserved.
+        <p>Design By [Sajib Hossen]</p>
+    </footer>
+</body>
+</html>
